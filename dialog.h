@@ -16,10 +16,10 @@ public:
   ~Dialog();
 
   signals:
-  ///The Dialog creates another QDialog
+  ///This Dialog creates another QDialog
   void add_me(QDialog * const dialog) const;
 
-  ///The Dialog creates another QDialog
+  ///This Dialog signals to be removed, by emitting 'this'
   void remove_me(QDialog * const dialog) const;
 
 private slots:
